@@ -1,0 +1,67 @@
+
+html, body {
+	height: 10000px;
+	width: 100vw;
+}
+
+#nav {
+	width: 150px;
+	position: fixed;
+}
+
+#logo-small {
+	color: white;
+	font-size: 32px;
+	margin-left: 40px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	font-family: 'Josefin Slab', serif;
+	font-weight: 600;
+	text-shadow: 0 2px 4px #9B9B9B;
+}
+
+.nav-item {
+	font-family: 'Roboto Condensed', sans-serif;
+	color: white;
+	font-size: 20px;
+	margin-left: 40px;
+	margin-bottom: 15px;
+	text-shadow: 0 2px 4px #9B9B9B;
+}
+
+#content {
+	width: 100%;
+}
+
+#logo {
+	position: absolute;
+	top: 40vh;
+	left: 50%;
+	margin-left: -260px;
+	font-family: 'Josefin Slab', sans-serif;
+	font-weight: 600;
+		text-shadow: 0 2px 4px #9B9B9B;
+	font-size: 60px;
+	color: #FFFFFF;
+	letter-spacing: 0.5px;
+	text-shadow: 0 2px 4px #9B9B9B;
+	
+}
+
+.img-l {
+	width: 100vw;
+	height: 100vh;
+	margin-bottom: -4px;
+}
+
+.img-p {
+	width: 100vw;
+	margin-bottom: -4px;
+}
+
+/* Mark Cunningham: */
+/*font-family: JosefinSlab-SemiBold;
+font-size: 60px;
+color: #FFFFFF;
+letter-spacing: 0.5px;
+text-shadow: 0 2px 4px #9B9B9B;*/
