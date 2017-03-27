@@ -1,32 +1,54 @@
-
-html, body {
-	height: 10000px;
-	width: 100vw;
+html, .body-bg {
+	background-color: #fffffb;
 }
 
-#nav {
+.nav {
 	width: 150px;
 	position: fixed;
 }
 
-#logo-small {
-	color: white;
-	font-size: 32px;
+.nav a {
+	text-decoration: none;
+}
+
+.logo-small {
+	font-size: 42px;
 	margin-left: 40px;
 	margin-top: 40px;
 	margin-bottom: 20px;
 	font-family: 'Josefin Slab', serif;
 	font-weight: 600;
+}
+
+.white {
+	color: white;
 	text-shadow: 0 2px 4px #9B9B9B;
+}
+
+.green {
+	color: #006A0E;
+}
+
+#logo-small:hover {
+	text-shadow: 0px 0px 20px #222;
 }
 
 .nav-item {
 	font-family: 'Roboto Condensed', sans-serif;
-	color: white;
 	font-size: 20px;
 	margin-left: 40px;
 	margin-bottom: 15px;
-	text-shadow: 0 2px 4px #9B9B9B;
+	/*text-shadow: 0 2px 4px #9B9B9B;*/
+	letter-spacing: 1px;
+}
+
+.green-hover:hover {
+	/*text-shadow: 0px 0px 20px #00963E;*/
+	text-decoration: underline;	
+}
+
+.black-hover:hover {
+	text-decoration: underline;
 }
 
 #content {
@@ -45,7 +67,6 @@ html, body {
 	color: #FFFFFF;
 	letter-spacing: 0.5px;
 	text-shadow: 0 2px 4px #9B9B9B;
-	
 }
 
 .img-l {
@@ -59,9 +80,76 @@ html, body {
 	margin-bottom: -4px;
 }
 
-/* Mark Cunningham: */
-/*font-family: JosefinSlab-SemiBold;
-font-size: 60px;
-color: #FFFFFF;
-letter-spacing: 0.5px;
-text-shadow: 0 2px 4px #9B9B9B;*/
+/*alt pages*/
+
+
+
+/*press page*/
+
+#press-nav {
+	float: left;
+}
+
+#press-content {
+	margin-top: 50px;
+	margin-left: 200px;
+	display: inline-block;
+	float: left;
+	width: 80%;
+	margin-right: 40px; 
+	min-width: 450px;
+}
+
+/*about page*/
+
+#headshot {
+	margin-left: 200px;
+	margin-top: 50px;
+	width: 350px;
+	float: left;
+}
+
+#bio {
+	width: 40%;
+	min-width: 490px;
+	display: inline-block;
+	float: left;
+	margin-top: 50px;
+	margin-left: 40px;
+	padding-right: 40px;
+	
+}
+
+#bio p {
+	margin-bottom: 20px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 18px;
+	letter-spacing: 1px;
+	color: #006A0E;
+}
+
+#about-nav {
+	float: left;
+}
+
+#about-body {
+	background-color: red;
+}
+
+
+#address {
+	float: left;
+	margin-right: 20px
+}
+
+#address p {
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+
+#bio img {
+	float: left;
+	margin-right: 10px;
+	margin-left: 5px;
+}
+

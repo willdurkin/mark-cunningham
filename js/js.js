@@ -2,16 +2,16 @@ $(document).ready(function(){
 	jQuery(function( $ ){
         $.localScroll.defaults.axis = 'yx';
         $.localScroll.hash({
-            target: '#content', 
+            target: '#nav', 
             queue:true,	
             duration:1000,
         });
         
         $.localScroll({
-            target: '#content', 
+            target: '#nav', 
             queue:true,
             duration:1500,
-            hash:true,
+            hash:false,
             onBefore:function( e, anchor, $target ){
                     // The 'this' is the settings object, can be modified
             },
@@ -20,4 +20,5 @@ $(document).ready(function(){
             }
         });
 	});
+    $('.nav').localScroll();
 });
