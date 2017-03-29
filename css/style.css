@@ -3,7 +3,7 @@ html, .body-bg {
 }
 
 .nav {
-	width: 150px;
+	width: 300px;
 	position: fixed;
 }
 
@@ -43,6 +43,25 @@ html, .body-bg {
 	letter-spacing: 1px;
 }
 
+#sub-nav {
+	margin-left: 80px;
+	margin-top: 10px;
+	margin-bottom: 25px;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #fffffb;
+	text-shadow: 0 2px 4px #9B9B9B;
+	letter-spacing: 1px;
+	display: none;
+}
+
+.location {
+	margin: 0px 0px 15px 00px;
+}
+
+.location a {
+	color: white;	
+}
+
 .green-hover:hover {
 	/*text-shadow: 0px 0px 20px #00963E;*/
 	text-decoration: underline;	
@@ -67,7 +86,15 @@ html, .body-bg {
 	font-size: 50px;
 	color: #fffffb;
 	letter-spacing: 0.5px;
-	text-shadow: 0 2px 4px #9B9B9B;
+}
+
+#arrow {
+	position:absolute;
+	top: 85vh;
+	left: 45%;
+	width: 70px;
+	margin-left: 35px;
+	text-shadow: 0px 2px 2px #9B9B9B;
 }
 
 .img-l {

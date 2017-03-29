@@ -20,5 +20,10 @@ $(document).ready(function(){
             }
         });
 	});
-    $('.nav').localScroll();
+    $('body').localScroll();
+
+    $('#project-link').click(function (event) {
+      event.preventDefault();
+      $('#sub-nav').slideToggle();
+    });
 });
