@@ -27,7 +27,7 @@ html, .body-bg {
 
 .green {
 	color: #006A0E;
-	text-shadow: 0px 2px 2px #9B9B9B;
+	/*text-shadow: 0px 2px 2px #9B9B9B;*/
 }
 
 #logo-small:hover {
@@ -49,7 +49,7 @@ html, .body-bg {
 	margin-bottom: 25px;
 	font-family: 'Roboto Condensed', sans-serif;
 	color: #fffffb;
-	text-shadow: 0 2px 4px #9B9B9B;
+	/*text-shadow: 0 2px 4px #9B9B9B;*/
 	letter-spacing: 1px;
 	display: none;
 }
