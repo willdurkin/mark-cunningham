@@ -33,22 +33,22 @@ $(document).ready(function(){
 
     var $content = $('#content')
 
-    $content.isotope({
-        itemSelector: '.item',
-        layoutMode: 'fitRows',
-        getSortData: {
-          order: '[data-order]',
-        },
-        hiddenStyle: {
-          opacity: 0,
-          // transform: 'scale(.01)'
-        },
-        visibleStyle: {
-          opacity: 1,
-          // transform: 'scale(1)'
-        },
-        transitionDuration: 1000,
-        containerStyle: null
+    $content.imagesLoaded(function(){
+        $content.isotope({
+            itemSelector: '.item',
+            layoutMode: 'fitRows',
+            getSortData: {
+              order: '[data-order]',
+            },
+            hiddenStyle: {
+              opacity: 0,
+            },
+            visibleStyle: {
+              opacity: 1,
+            },
+            transitionDuration: 1000,
+            containerStyle: null
+        });
     });
 
 // BUTTONS
@@ -58,17 +58,17 @@ $(document).ready(function(){
         $('.sub-nav').slideToggle();
     }
 
-    var subNavClosed = true;
+    var subNavClosed = false;
 
     $('#project-link1').click(function (event) {
         event.preventDefault();
-        if(subNavClosed){
-            $('#header').animate({height: '100px' }); 
-            subNavClosed = false;   
-        } else {
-            $('#header').animate({height: '55px' });    
-            subNavClosed = true;
-        }
+        // if(subNavClosed){
+        //     $('#header').animate({height: '100px' }); 
+        //     subNavClosed = false;   
+        // } else {
+        //     $('#header').animate({height: '55px' });    
+        //     subNavClosed = true;
+        // }
         
         // $('#header').toggle(function() {
         //     $(this).animate({height:'100px'});
@@ -95,8 +95,8 @@ $(document).ready(function(){
             $('#nav-icon3').toggleClass('open');
             $('.nav').animate({height: 'toggle'});
         }
-        $('.sub-nav').slideToggle();
-        $('#header').animate({height: '55px' }); 
+        // $('.sub-nav').slideToggle();
+        // $('#header').animate({height: '55px' }); 
         subNavClosed = true;
     });
 
