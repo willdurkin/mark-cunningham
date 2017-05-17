@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+    $(function() {
+        $("img.item").lazyload();
+    });
+
 // LOCALSCROLL
 
 	jQuery(function( $ ){
@@ -93,7 +97,7 @@ $(document).ready(function(){
         }
         $('.sub-nav').slideToggle();
         $('#header').animate({height: '55px' }); 
-
+        subNavClosed = true;
     });
 
     $('.gw-button').click(function() {

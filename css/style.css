@@ -18,7 +18,7 @@ body {
 	background-color: white;
 	height: 55px;
 	left: 0;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	width: 100%;
 	z-index: 1;
@@ -32,7 +32,6 @@ body {
 	left: 5%;
 	display: block;
 	width: 250px;
-	height: 17px;
 
 /*	top: 18px;
 	width: 320px;
@@ -123,7 +122,7 @@ body {
 	display: none;
 	clear: left;
 	font-weight: 100;
-	position: fixed;
+	position: absolute;
 	height: 300px;
 	width: 200px;
 	z-index: 2;
@@ -316,7 +315,7 @@ body {
 }
 
 
-/**********DESKTOP*************/
+/**********DESKTOP**************************************************************************************************/
 
 
 @media only screen 
@@ -327,7 +326,10 @@ body {
 }
 
 body {
-	max-width: 800px;
+	width: 100%;
+	max-width: 1150px;
+	margin: 0 auto;
+	position: relative;
 }
 
 #hamburger {
@@ -346,7 +348,7 @@ body {
 .nav {
 	width: 400px;
 	height: 60px;
-	position: fixed;
+	position: absolute;
 	z-index: 2;
 	right: 20px;
 	top: 20px;
@@ -373,12 +375,11 @@ body {
 
 .sub-nav {
 	margin: 0 0 20px 20px;
-	display: none;
 	top: 55px;
 	text-align: right;
 	width: 600px;
 	height: 60px;
-	position: fixed;
+	position: absolute;
 	z-index: 2;
 	right: 20px;
 	left: 0;
@@ -403,7 +404,7 @@ body {
 	margin: 0;
 	position: absolute;
 	top: 40px;
-	/*left: 5%;*/
+	/*left: 10%;*/
 }
 
 #content .item {
@@ -412,42 +413,31 @@ body {
 
 .col-1 {
 	box-sizing: border-box;
-	float: left;
+	display: inline-block;
 	height: auto;
-	padding: 20px;
+	padding: 10px 20px 10px 20px;
 	width: 50%;
+	float: left;
 }
 
 .col-2 {
 	box-sizing: border-box;
-	float: left;
+	display: inline-block;
 	height: auto;
-	padding: 20px;
+	padding: 10px 20px 10px 20px;
 	width: 100%;
+	float: left;
 }
 
 #logo {
-	/*z-index: 2;
-	position: absolute;
-	top: 40.5vh;
-	left: 50%;
-	margin-left: -420px;
-	font-family: 'Josefin Slab', sans-serif;
-	font-weight: 600;
-		text-shadow: 0 2px 4px #9B9B9B;
-	font-size: 50px;
-	color: #fffffb;
-	letter-spacing: 0.5px;
-	width: auto;
-	height: auto;*/
+
 
 	z-index: 2;
-	position: fixed;
+	position: absolute;
 	top: 20px;
 	left: 20px;
 	display: block;
-	width: 250px;
-	height: 17px;
+	width: 350px;
 }
 
 #arrow {
@@ -461,16 +451,6 @@ body {
 	display: block;
 }
 
-/*.img-l {
-	width: 100vw;
-	height: 100vh;
-	
-}
-
-.img-p {
-	width: 100vw;
-	margin-bottom: -4px;
-}*/
 
 .img-p2 {
 	width: 49vw;
@@ -478,7 +458,38 @@ body {
 	/*float: left;*/
 }
 
-/*press page*/
+#view-more {
+	display: block;
+	height: 60px;
+	width: 200px;
+	text-align: center;
+	border: 1px solid #000;
+	margin: 20px auto 40px auto; 
+	border-radius: 5px;
+	text-decoration: none;
+	color: black;
+}
+
+#view-more:visited {
+	color: black;
+
+}
+
+#view-more:hover {
+	background-color: black;
+	color: white;
+
+}
+
+#view-more p{
+	margin-top: 20px;
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 300;
+}
+
+
+
+/*press page********************/
 
 #press-nav {
 	float: left;
