@@ -39,12 +39,23 @@ body {
 }
 
 #content {
-	display: flex;
+	/*display: flex;*/
 	flex-direction: column;
 	align-items: center;
 	margin: 55px 0 0 5%;
-	/*overflow: hidden;*/
 	position: absolute;
+	width: 100%;
+	/*top: 55px;
+	left: 5%;*/
+}
+
+#highlight {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 55px 0 0 0;
+	position: absolute;
+	width: 100%;
 	/*top: 55px;
 	left: 5%;*/
 }
@@ -58,15 +69,51 @@ body {
 }
 
 .col-1 {
-	width: 90vw;
+	width: 90%;
 	height: auto;
 	margin: 0 0 15px 0;
 }
 
 .col-2 {
-	width: 90vw;
+	width: 90%;
 	height: auto;
 	margin: 0 0 15px 0;
+}
+
+.col-3 {
+	box-sizing: border-box;
+	display: inline-block;
+	height: auto;
+	padding: 10px;
+	width: 90%;
+	float: left;
+}
+
+.col-4 {
+	box-sizing: border-box;
+	display: inline-block;
+	height: auto;
+	padding: 10px;
+	width: 90%;
+	float: left;
+}
+
+.hl-1 {
+	box-sizing: border-box;
+	display: inline-block;
+	height: auto;
+	padding: 10px;
+	width: 90%;
+	float: none;
+}
+
+.hl-2 {
+	box-sizing: border-box;
+	display: inline-block;
+	height: auto;
+	padding: 10px;
+	width: 90%;
+	float: none;
 }
 
 #nav-icon3:hover {
@@ -337,6 +384,14 @@ body {
 #header {
 	background-color: #fff;
 	/*opacity: .5;*/
+	position: fixed;
+}
+
+#logo-container {
+	position: relative;
+	width: 100%;
+	max-width: 1150px;
+	margin: 0 auto;
 }
 
 #work-header {
@@ -350,7 +405,7 @@ body {
 }
 
 .active {
-	text-decoration: none;
+	border-bottom: 1px solid black;
 }
 
 .nav {
@@ -358,7 +413,7 @@ body {
 	height: 60px;
 	position: absolute;
 	z-index: 2;
-	right: 20px;
+	right: 10px;
 	top: 20px;
 	display: block;
 	background-color: transparent;
@@ -382,14 +437,14 @@ body {
 }
 
 .sub-nav {
-	margin: 0 0 20px 20px;
+	margin: 10px 0 20px 20px;
 	top: 55px;
 	text-align: right;
-	width: 600px;
-	height: 60px;
+	width: 100%;
+	height: 80px;
 	position: absolute;
 	z-index: 2;
-	right: 20px;
+	right: 10px;
 	left: auto;
 	display: block;
 }
@@ -397,7 +452,10 @@ body {
 .sub-nav a {
 	display: inline-block;
 	margin: 0 0 0 30px;
-	font-size: 14;
+	font-size: 12px;
+	text-decoration: none;
+	padding-bottom: 2px;
+	letter-spacing: 1px;
 }
 
 .sub-nav:last-child {
@@ -408,11 +466,17 @@ body {
 	display: none;
 }
 
+#highlight {
+	margin-top: 55px;
+	width: 100%;
+	margin:0 auto;
+}
+
 #content {
 	width: 100%;
 	margin: 0;
 	position: absolute;
-	top: 40px;
+	padding-top: 90px;
 	/*left: 10%;*/
 }
 
@@ -424,7 +488,7 @@ body {
 	box-sizing: border-box;
 	display: inline-block;
 	height: auto;
-	padding: 10px 20px 10px 20px;
+	padding: 10px;
 	width: 50%;
 	float: left;
 }
@@ -433,18 +497,52 @@ body {
 	box-sizing: border-box;
 	display: inline-block;
 	height: auto;
-	padding: 10px 20px 10px 20px;
+	padding: 10px;
+	width: 100%;
+	float: left;
+}
+
+.col-3 {
+	box-sizing: border-box;
+	display: inline-block;
+	height: auto;
+	padding: 10px;
+	width: 40.5%;
+	float: left;
+}
+
+.col-4 {
+	box-sizing: border-box;
+	display: inline-block;
+	height: auto;
+	padding: 10px;
+	width: 59.5%;
+	float: left;
+}
+
+.hl-1 {
+	box-sizing: border-box;
+	display: inline-block;
+	height: auto;
+	padding: 10px;
+	width: 50%;
+	float: left;
+}
+
+.hl-2 {
+	box-sizing: border-box;
+	display: inline-block;
+	height: auto;
+	padding: 10px;
 	width: 100%;
 	float: left;
 }
 
 #logo {
-
-
 	z-index: 2;
 	position: absolute;
 	top: 20px;
-	left: 20px;
+	left: 10px;
 	display: block;
 	width: 350px;
 }

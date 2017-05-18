@@ -47,7 +47,9 @@ $(document).ready(function(){
               opacity: 1,
             },
             transitionDuration: 1000,
-            containerStyle: null
+            containerStyle: null,
+            filter: '.gw',
+            sortBy: [ 'order' ]
         });
     });
 
@@ -75,7 +77,7 @@ $(document).ready(function(){
         // }, function() {
         //     $(this).animate({height:'55px'});
         // });
-        $('.sub-nav').slideToggle();
+        // $('.sub-nav').slideToggle();
     }); 
 
     $('.all-button').click(function() {
@@ -98,6 +100,8 @@ $(document).ready(function(){
         // $('.sub-nav').slideToggle();
         // $('#header').animate({height: '55px' }); 
         subNavClosed = true;
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
     });
 
     $('.gw-button').click(function() {
@@ -130,6 +134,66 @@ $(document).ready(function(){
         var screenWidth = $(window).width();
         $content.isotope({
             filter: '.nc',
+            sortBy: [ 'order' ]
+        });
+        if(screenWidth > 600) {
+            
+            $('#arrow').hide();    
+        }
+    });
+
+    $('.sag-button').click(function() {
+        var screenWidth = $(window).width();
+        $content.isotope({
+            filter: '.sag',
+            sortBy: [ 'order' ]
+        });
+        if(screenWidth > 600) {
+            
+            $('#arrow').hide();    
+        }
+    });
+
+    $('.li-button').click(function() {
+        var screenWidth = $(window).width();
+        $content.isotope({
+            filter: '.li',
+            sortBy: [ 'order' ]
+        });
+        if(screenWidth > 600) {
+            
+            $('#arrow').hide();    
+        }
+    });
+
+    $('.sr-button').click(function() {
+        var screenWidth = $(window).width();
+        $content.isotope({
+            filter: '.sr',
+            sortBy: [ 'order' ]
+        });
+        if(screenWidth > 600) {
+            
+            $('#arrow').hide();    
+        }
+    });
+
+    $('.un-button').click(function() {
+        var screenWidth = $(window).width();
+        $content.isotope({
+            filter: '.un',
+            sortBy: [ 'order' ]
+        });
+        if(screenWidth > 600) {
+            
+            $('#arrow').hide();    
+        }
+    });
+
+    $('.wa-button').click(function() {
+        var screenWidth = $(window).width();
+        $content.isotope({
+            filter: '.wa',
             sortBy: [ 'order' ]
         });
         if(screenWidth > 600) {
