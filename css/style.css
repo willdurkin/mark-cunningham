@@ -510,8 +510,10 @@ body {
 	margin: 0;
 	position: absolute;
 	padding-top: 90px;
+	
 	/*left: 10%;*/
 }
+
 
 .col-1 {
 	box-sizing: border-box;
@@ -536,7 +538,7 @@ body {
 	display: inline-block;
 	height: auto;
 	padding: 10px;
-	width: 40.5%;
+	width: 35.35%;
 	float: left;
 }
 
@@ -545,8 +547,16 @@ body {
 	display: inline-block;
 	height: auto;
 	padding: 10px;
-	width: 59.5%;
+	width: 64.65%;
 	float: left;
+}
+
+.l {
+	padding-right: 10px;
+}
+
+.r {
+	padding-left: 10px;
 }
 
 .hl-1 {

@@ -48,10 +48,14 @@ $(document).ready(function(){
             },
             transitionDuration: 1000,
             containerStyle: null,
-            filter: '.gw',
+            filter: '.mv',
             sortBy: [ 'order' ]
         });
     });
+
+    $view = $('#view-more');
+
+    $view
 
 // BUTTONS
 
@@ -194,6 +198,18 @@ $(document).ready(function(){
         var screenWidth = $(window).width();
         $content.isotope({
             filter: '.wa',
+            sortBy: [ 'order' ]
+        });
+        if(screenWidth > 600) {
+            
+            $('#arrow').hide();    
+        }
+    });
+
+    $('.mv-button').click(function() {
+        var screenWidth = $(window).width();
+        $content.isotope({
+            filter: '.mv',
             sortBy: [ 'order' ]
         });
         if(screenWidth > 600) {
