@@ -218,6 +218,18 @@ $(document).ready(function(){
         }
     });
 
+        $('.sh-button').click(function() {
+        var screenWidth = $(window).width();
+        $content.isotope({
+            filter: '.sh',
+            sortBy: [ 'order' ]
+        });
+        if(screenWidth > 600) {
+            
+            $('#arrow').hide();    
+        }
+    });
+
     // filter items on button click
 
     // $('.filter-button-group').on( 'click', 'button', function() {
