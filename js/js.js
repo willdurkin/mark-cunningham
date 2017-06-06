@@ -218,10 +218,34 @@ $(document).ready(function(){
         }
     });
 
-        $('.sh-button').click(function() {
+    $('.sh-button').click(function() {
         var screenWidth = $(window).width();
         $content.isotope({
             filter: '.sh',
+            sortBy: [ 'order' ]
+        });
+        if(screenWidth > 600) {
+            
+            $('#arrow').hide();    
+        }
+    });
+
+    $('.mf-button').click(function() {
+        var screenWidth = $(window).width();
+        $content.isotope({
+            filter: '.mf',
+            sortBy: [ 'order' ]
+        });
+        if(screenWidth > 600) {
+            
+            $('#arrow').hide();    
+        }
+    });
+
+    $('.wv-button').click(function() {
+        var screenWidth = $(window).width();
+        $content.isotope({
+            filter: '.wv',
             sortBy: [ 'order' ]
         });
         if(screenWidth > 600) {
