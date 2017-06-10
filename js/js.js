@@ -64,24 +64,28 @@ $(document).ready(function(){
         $('.sub-nav').slideToggle();
     }
 
+    var screenWidth = $(window).width();
     var subNavClosed = false;
 
     $('#project-link1').click(function (event) {
         event.preventDefault();
-        // if(subNavClosed){
-        //     $('#header').animate({height: '100px' }); 
-        //     subNavClosed = false;   
-        // } else {
-        //     $('#header').animate({height: '55px' });    
-        //     subNavClosed = true;
-        // }
-        
-        // $('#header').toggle(function() {
-        //     $(this).animate({height:'100px'});
-        // }, function() {
-        //     $(this).animate({height:'55px'});
-        // });
-        // $('.sub-nav').slideToggle();
+        if (screenWidth < 600) {
+            if(subNavClosed){
+                $('#header').animate({height: '100px' }); 
+                subNavClosed = false;   
+            } else {
+                $('#header').animate({height: '55px' });    
+                subNavClosed = true;
+            }
+            
+            $('#header').toggle(function() {
+                $(this).animate({height:'100px'});
+            }, function() {
+                $(this).animate({height:'55px'});
+            });
+            
+            $('.sub-nav').slideToggle();
+        }
     }); 
 
     $('.all-button').click(function() {
@@ -92,7 +96,6 @@ $(document).ready(function(){
     });
 
     $('.button').click(function() {
-        var screenWidth = $(window).width();
         if(screenWidth > 600) {
             
             $('#arrow').fadeIn();
@@ -100,16 +103,15 @@ $(document).ready(function(){
         if(screenWidth <= 600){
             $('#nav-icon3').toggleClass('open');
             $('.nav').animate({height: 'toggle'});
+            $('.sub-nav').slideToggle();
+            $('#header').animate({height: '55px' }); 
         }
-        // $('.sub-nav').slideToggle();
-        // $('#header').animate({height: '55px' }); 
         subNavClosed = true;
         $(this).siblings().removeClass('active');
         $(this).addClass('active');
     });
 
     $('.gw-button').click(function() {
-        var screenWidth = $(window).width();
         $content.isotope({
             filter: '.gw',
             sortBy: [ 'order' ]
@@ -123,7 +125,6 @@ $(document).ready(function(){
     });
 
     $('.fif-button').click(function() {
-        var screenWidth = $(window).width();
         $content.isotope({
             filter: '.fif',
             sortBy: [ 'order' ]
@@ -135,7 +136,6 @@ $(document).ready(function(){
     });
 
     $('.nc-button').click(function() {
-        var screenWidth = $(window).width();
         $content.isotope({
             filter: '.nc',
             sortBy: [ 'order' ]
@@ -147,7 +147,6 @@ $(document).ready(function(){
     });
 
     $('.sag-button').click(function() {
-        var screenWidth = $(window).width();
         $content.isotope({
             filter: '.sag',
             sortBy: [ 'order' ]
@@ -159,7 +158,6 @@ $(document).ready(function(){
     });
 
     $('.li-button').click(function() {
-        var screenWidth = $(window).width();
         $content.isotope({
             filter: '.li',
             sortBy: [ 'order' ]
@@ -171,7 +169,6 @@ $(document).ready(function(){
     });
 
     $('.sr-button').click(function() {
-        var screenWidth = $(window).width();
         $content.isotope({
             filter: '.sr',
             sortBy: [ 'order' ]
@@ -183,7 +180,6 @@ $(document).ready(function(){
     });
 
     $('.un-button').click(function() {
-        var screenWidth = $(window).width();
         $content.isotope({
             filter: '.un',
             sortBy: [ 'order' ]
@@ -195,7 +191,6 @@ $(document).ready(function(){
     });
 
     $('.wa-button').click(function() {
-        var screenWidth = $(window).width();
         $content.isotope({
             filter: '.wa',
             sortBy: [ 'order' ]
@@ -207,7 +202,6 @@ $(document).ready(function(){
     });
 
     $('.mv-button').click(function() {
-        var screenWidth = $(window).width();
         $content.isotope({
             filter: '.mv',
             sortBy: [ 'order' ]
@@ -219,7 +213,6 @@ $(document).ready(function(){
     });
 
     $('.sh-button').click(function() {
-        var screenWidth = $(window).width();
         $content.isotope({
             filter: '.sh',
             sortBy: [ 'order' ]
@@ -231,7 +224,6 @@ $(document).ready(function(){
     });
 
     $('.mf-button').click(function() {
-        var screenWidth = $(window).width();
         $content.isotope({
             filter: '.mf',
             sortBy: [ 'order' ]
@@ -243,7 +235,6 @@ $(document).ready(function(){
     });
 
     $('.wv-button').click(function() {
-        var screenWidth = $(window).width();
         $content.isotope({
             filter: '.wv',
             sortBy: [ 'order' ]
