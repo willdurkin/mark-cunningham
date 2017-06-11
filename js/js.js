@@ -48,8 +48,9 @@ $(document).ready(function(){
             },
             transitionDuration: 1000,
             containerStyle: null,
-            filter: '.mv',
-            sortBy: [ 'order' ]
+            resizeContainer: false,
+            filter: '.mv'
+            // sortBy: [ 'order' ]
         });
     });
 
@@ -83,7 +84,7 @@ $(document).ready(function(){
             }, function() {
                 $(this).animate({height:'55px'});
             });
-            
+
             $('.sub-nav').slideToggle();
         }
     }); 
@@ -95,26 +96,11 @@ $(document).ready(function(){
         });
     });
 
-    $('.button').click(function() {
-        if(screenWidth > 600) {
-            
-            $('#arrow').fadeIn();
-        }
-        if(screenWidth <= 600){
-            $('#nav-icon3').toggleClass('open');
-            $('.nav').animate({height: 'toggle'});
-            $('.sub-nav').slideToggle();
-            $('#header').animate({height: '55px' }); 
-        }
-        subNavClosed = true;
-        $(this).siblings().removeClass('active');
-        $(this).addClass('active');
-    });
 
     $('.gw-button').click(function() {
         $content.isotope({
             filter: '.gw',
-            sortBy: [ 'order' ]
+            // sortBy: [ 'order' ]
         });
         if(screenWidth > 600) {
             
@@ -239,6 +225,9 @@ $(document).ready(function(){
             filter: '.wv',
             sortBy: [ 'order' ]
         });
+        $('html, body').animate({
+                  scrollTo: $("#top")
+              }, 100);
         if(screenWidth > 600) {
             
             $('#arrow').hide();    
@@ -274,6 +263,21 @@ $(document).ready(function(){
 // nav-icon
     $('#nav-icon3').click(function(){
         $(this).toggleClass('open');
+    });
+
+
+    $('.button').click(function() {
+        if(screenWidth <= 750){
+            $('#nav-icon3').toggleClass('open');
+            $('.nav').animate({height: 'toggle'});
+            $('.sub-nav').slideToggle();
+            $('#header').animate({height: '55px' }); 
+        subNavClosed = true;
+        }
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+        
+        console.log('hi');
     });
 
 });

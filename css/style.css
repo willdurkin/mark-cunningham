@@ -3,7 +3,12 @@
 /*MOBILE*/
 
 body {
-	margin: 0;
+	-ms-overflow-style: none;  // IE 10+
+	overflow: -moz-scrollbars-none;  // Firefox
+}
+
+body::-webkit-scrollbar { 
+    display: none;  // Safari and Chrome
 }
 
 .grid-sizer { 
@@ -29,7 +34,7 @@ body {
 	z-index: 2;
 	position: absolute;
 	top: 20px;
-	left: 5%;
+	left: 10px;
 	display: block;
 	width: 250px;
 
@@ -42,18 +47,25 @@ body {
 	/*display: flex;*/
 	flex-direction: column;
 	align-items: center;
-	margin: 55px 0 0 0;
+	margin: 40px 0 0 0;
 	position: absolute;
 	width: 100%;
 	/*top: 55px;
 	left: 5%;*/
+	-ms-overflow-style: none;  // IE 10+
+	overflow: -moz-scrollbars-none;  // Firefox
+	box-sizing: border-box;
+}
+
+content::-webkit-scrollbar { 
+    display: none;  // Safari and Chrome
 }
 
 #highlight {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 55px 0 0 0;
+	margin: 40px 0 0 0;
 	position: absolute;
 	width: 100%;
 	/*top: 55px;
@@ -131,7 +143,7 @@ body {
 #view-more {
 	display: block;
 	height: 60px;
-	width: 200px;
+	width: 60px;
 	text-align: center;
 	border: 3px solid #000;
 	margin: 0 auto; 
@@ -237,7 +249,7 @@ body {
 #nav-icon3 {
 	position: fixed;
 	top: 15px;
-	right: 5%;
+	right: 10px;
 	z-index: 2;
 	width: 25px;
 	height: 45px;
@@ -383,7 +395,7 @@ body {
 
 
 @media only screen 
-	and (min-width: 600px) {
+	and (min-width: 750px) {
 
 body {
 	width: 100%;
@@ -392,6 +404,11 @@ body {
 	position: relative;
 	background-color: #fffffb;
 
+}
+
+#top {
+	width: 1px;
+	position: relative;
 }
 
 #hamburger {
@@ -498,12 +515,18 @@ body {
 }
 
 #content {
-	width: 100%;
-	margin: 0;
+	width: 100vw;
+	margin: 95px 0 0 0;
 	position: absolute;
-	padding-top: 90px;
-	
+	-ms-overflow-style: none;  // IE 10+
+	overflow: -moz-scrollbars-none;  // Firefox
 	/*left: 10%;*/
+	/*box-sizing: border-box;*/
+
+}
+
+#content::-webkit-scrollbar { 
+    display: none;  // Safari and Chrome
 }
 
 
@@ -595,7 +618,7 @@ body {
 #view-more {
 	display: block;
 	height: 60px;
-	width: 200px;
+	width: 60px;
 	text-align: center;
 	border: 5px solid #000;
 	margin: 0 auto; 
@@ -643,13 +666,17 @@ body {
 #press-content {
 	margin-top: 40px;
 	margin-left: 20px;
-	display: inline-block;
+	display: flex;
 	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 0;
 }
 
 .press {
 	width: 200px;
 	margin: 10px;
+	flex: 1 1 auto;
 }
 
 #press-logo {
