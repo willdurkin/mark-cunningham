@@ -68,9 +68,9 @@ $(document).ready(function(){
     var screenWidth = $(window).width();
     var subNavClosed = false;
 
-    $('#project-link1').click(function (event) {
+    $('.project-link1').click(function (event) {
         event.preventDefault();
-        if (screenWidth < 600) {
+        if (screenWidth <= 751) {
             if(subNavClosed){
                 $('#header').animate({height: '100px' }); 
                 subNavClosed = false;   

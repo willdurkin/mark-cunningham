@@ -212,6 +212,14 @@ content::-webkit-scrollbar {
 	color: black;
 }
 
+#desk-work-link {
+	display: none;
+}
+
+#mob-work-link {
+	display: inline-block;
+}
+
 .white {
 	color: black;
 	/*text-shadow: 0 2px 4px #9B9B9B;*/
@@ -463,6 +471,14 @@ body {
 	background-color: transparent;
 	text-align: right;
 	margin: 0;
+}
+
+#mob-work-link {
+	display: none;
+}
+
+#desk-work-link {
+	display: inline-block;
 }
 
 .nav a {
