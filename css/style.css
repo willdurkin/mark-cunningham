@@ -19,11 +19,7 @@ body::-webkit-scrollbar {
 	clear: both;
 }
 
-.show {
-	height: 100%;
-}
-
-#header {
+.header {
 	background-color: white;
 	height: 55px;
 	left: 0;
@@ -41,8 +37,9 @@ body::-webkit-scrollbar {
 .nav {
 	width: 100%;
 	height: 100%;
-	position: absolute;
-	/*left: 0;*/
+	position: fixed;
+	top: 0;
+	left: 0;
 	background-color: white;
 	z-index: 2;
 	display: none;
@@ -50,9 +47,8 @@ body::-webkit-scrollbar {
 	font-family: 'Nunito Sans', sans-serif;
 	font-size: 17px;
 	font-weight: 100;
-	/*margin: 63px 0 0 5%;*/
-	/*text-shadow: 0 2px 4px #9B9B9B;*/
 	letter-spacing: 3px;
+	overflow: hidden;
 }
 
 #logo {
@@ -68,9 +64,13 @@ body::-webkit-scrollbar {
 	height: 20px;*/
 }
 
+.fixed {
+	position: fixed;
+}
+
 .nav a:first-child {
 	margin-top: 70px;
-	margin-left: 5%;
+	margin-left: 20px;
 }
 
 .nav a {
@@ -101,7 +101,7 @@ body::-webkit-scrollbar {
 	width: 200px;
 	z-index: 2;
 	top: 120px;
-	left: 5%;
+	left: 21px
 }
 
 .sub-nav a{
@@ -114,12 +114,16 @@ body::-webkit-scrollbar {
 	margin: 0 0 20px 0;
 }
 
+.sub-nav a:first-child {
+	margin: 0 0 20px 0;
+}
+
 /*nav icon*/
 
 #nav-icon3 {
-	position: fixed;
-	top: 15px;
-	right: 10px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
 	z-index: 2;
 	width: 25px;
 	height: 45px;
@@ -196,7 +200,7 @@ body::-webkit-scrollbar {
 	flex-direction: column;
 	align-items: center;
 	margin: 0;
-	position: absolute;
+	position: relative;
 	width: 100%;
 	/*top: 55px;
 	left: 5%;*/
@@ -450,7 +454,7 @@ body {
 	z-index: 2;
 	position: absolute;
 	top: 20px;
-	left: 20px;
+	left: 10px;
 	display: block;
 	width: 350px;
 }
