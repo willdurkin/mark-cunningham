@@ -9,13 +9,13 @@ $(document).ready(function(){
 	jQuery(function( $ ){
         $.localScroll.defaults.axis = 'yx';
         $.localScroll.hash({
-            target: '#content', 
+            target: '#header', 
             queue:true,	
             duration:1000,
         });
         
         $.localScroll({
-            target: '#content', 
+            target: '#header', 
             queue:true,
             duration:1000,
             hash:false,
@@ -53,10 +53,6 @@ $(document).ready(function(){
             // sortBy: [ 'order' ]
         });
     });
-
-    $view = $('#view-more');
-
-    $view
 
 // BUTTONS
 
@@ -226,7 +222,7 @@ $(document).ready(function(){
             sortBy: [ 'order' ]
         });
         $('html, body').animate({
-                  scrollTo: $("#top")
+                  scrollTop: $("#header")
               }, 100);
         if(screenWidth > 600) {
             
@@ -252,7 +248,9 @@ $(document).ready(function(){
     $hamburger  = $('#hamburger');
 
     $('#nav-icon3').click(function(){
+        $('#header').toggleClass('show')
         $('.nav').animate({height: 'toggle'});
+
     });
 
     $('#project-link2').click(function (event) {
