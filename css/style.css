@@ -70,16 +70,12 @@ body::-webkit-scrollbar {
 
 .nav a:first-child {
 	margin-top: 70px;
-	margin-left: 20px;
+	margin-left: 10px;
 }
 
 .nav a {
 	margin: 10px 30px 20px 0;
 	display: inline-block;
-}
-
-.nav a {
-	/*box-shadow: 10px 0px 2px #888888;;*/
 	text-decoration: none;
 	color: black;
 }
@@ -101,7 +97,7 @@ body::-webkit-scrollbar {
 	width: 200px;
 	z-index: 2;
 	top: 120px;
-	left: 21px
+	left: 10px
 }
 
 .sub-nav a{
@@ -118,14 +114,18 @@ body::-webkit-scrollbar {
 	margin: 0 0 20px 0;
 }
 
+#hp-sub {
+	display: none;
+}
+
 /*nav icon*/
 
 #nav-icon3 {
 	position: absolute;
-	top: 20px;
+	top: 17px;
 	right: 20px;
 	z-index: 2;
-	width: 25px;
+	width: 20px;
 	height: 45px;
 	-webkit-transform: rotate(0deg);
 	-moz-transform: rotate(0deg);
@@ -217,7 +217,7 @@ content::-webkit-scrollbar {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 40px 0 0 0;
+	margin: 0;
 	position: absolute;
 	width: 100%;
 	/*top: 55px;
@@ -305,7 +305,16 @@ content::-webkit-scrollbar {
 	position: relative;
 	top: 46%;
 	box-shadow: 10px 10px 1px #111;
+	color: black;
 }
+
+/*#view-more:hover {
+	background-color: black;
+}
+
+#view-more:hover p{
+	color: white;
+}*/
 
 #view-more:active {
 	background-color: white;
@@ -369,19 +378,19 @@ content::-webkit-scrollbar {
 
 #about-content{
 	margin-top: 55px;
-	margin-left: 5%;
-	width: 90%;
-	margin-right: 40px; 
+	margin-left: 10px;
+	width: 100%;
+	margin-right: 10px; 
 }
 
 #headshot {
-	width: 100%;
+	width: 350px;
 }
 
 #bio {
 	width: 100%;
 	margin-top: 20px;
-	
+	line-height: 20px;
 }
 
 #bio p {
@@ -389,8 +398,7 @@ content::-webkit-scrollbar {
 	font-family: 'Nunito Sans', sans-serif;
 	font-weight: 300;
 	font-size: 18px;
-	letter-spacing: 1.5px;
-	color: black;
+	color: #222;
 }
 
 #about-nav {
@@ -417,7 +425,7 @@ content::-webkit-scrollbar {
 
 
 @media only screen 
-	and (min-width: 750px) {
+	and (min-width: 875px) {
 
 body {
 	width: 100%;
@@ -479,12 +487,14 @@ body {
 	height: 60px;
 	position: absolute;
 	z-index: 2;
-	right: 20px;
+	right: 10px;
 	top: 20px;
+	left: auto;
 	display: block;
 	background-color: transparent;
 	text-align: right;
 	margin: 0;
+	overflow: visible;
 }
 
 #mob-work-link {
@@ -531,6 +541,10 @@ body {
 
 .sub-nav:last-child {
 	margin-right: 20px;
+}
+
+#hp-sub {
+	display: none;
 }
 
 #nav-icon3 {
@@ -710,11 +724,11 @@ body {
 	display: none;
 }
 
-/*about page*/
+/**** desk about page*/
 
 #about-content{
 	margin-top: 40px;
-	margin-left: 20px;
+	margin-left: 10px;
 	width: 100%;
 	display: inline-block;
 }
@@ -722,18 +736,18 @@ body {
 #headshot {
 	margin-left: 0px;
 	margin-top: 40px;
-	width: 30%;
+	width: 300px;
 	float: left;
 	margin-right: 5%;
 }
 
 #bio {
-	width: 50%;
+	width: 540px;
 	min-width: 490px;
 	display: inline-block;
 	float: left;
 	margin-top: 40px;
-	
+	line-height: 21px;
 }
 
 #bio p {
@@ -741,8 +755,6 @@ body {
 	font-family: 'Nunito Sans', sans-serif;
 	font-weight: 300;
 	font-size: 18px;
-	letter-spacing: 1.5px;
-	color: black;
 	margin-top: 0px;
 }
 
@@ -750,13 +762,8 @@ body {
 	float: left;
 }
 
-#about-body {
-	background-color: red;
-}
-
-
 #address {
-	margin-right: 20px
+	margin-right: 20px;
 }
 
 #address p {
@@ -766,7 +773,6 @@ body {
 
 #bio img {
 	margin-right: 10px;
-	margin-top: 20px;
 }
 
 ) /*end desktop*/
