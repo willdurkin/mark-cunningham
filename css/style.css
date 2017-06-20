@@ -21,14 +21,17 @@ body::-webkit-scrollbar {
 
 .header {
 	background-color: white;
-	height: 50px;
+	height: 40px;
 	left: 0;
 	position: relative;
 	top: 0;
 	width: 100%;
-	margin-bottom: 0px;
-	/*z-index: 1;*/
-	/*opacity: .5;*/
+}
+
+#hl-header {
+	position: fixed;
+	background-color: transparent;
+	z-index: 1;
 }
 
 #nav-icon3:hover {
@@ -348,7 +351,7 @@ content::-webkit-scrollbar {
 }
 
 .press {
-	width: 200px;
+	width: 160px;
 	margin: 10px;
 	flex: 1 1 auto;
 }
@@ -435,7 +438,7 @@ body {
 }
 
 .header {
-	margin-bottom: 10px;
+	height: 60px;
 }
 
 #logo-container {
@@ -546,7 +549,7 @@ body {
 
 #content {
 	width: 100vw;
-	margin: 45px 0 0 0;
+	margin: 35px 0 0 0;
 	position: absolute;
 	-ms-overflow-style: none;  // IE 10+
 	overflow: -moz-scrollbars-none;  // Firefox
