@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
-    $(function() {
-        $("img.item").lazyload();
-    });
+    // $(function() {
+    //     $("img.item").lazyload();
+    // });
 
 // LOCALSCROLL
 
